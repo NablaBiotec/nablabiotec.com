@@ -11,6 +11,9 @@
   
   
   <title>Nabla Biotec</title>
+  <script type="text/javascript" src="WA/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="WA/floating-wpp.min.js"></script>
+  <link rel="stylesheet" href="WA/floating-wpp.min.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -31,6 +34,7 @@
 <body>
   
   <section data-bs-version="5.1" class="menu menu2 cid-sXWQMvEH9G" once="menu" id="menu2-z">
+  <div id="myDiv"></div> 
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container-fluid">
@@ -320,4 +324,15 @@
   
   <input name="animation" type="hidden">
   </body>
+  
+  <script type="text/javascript">
+    $(function () {
+        $('#myDiv').floatingWhatsApp({
+            phone: '+523342595662',
+            popupMessage: 'Hola ¿cómo podemos ayudarte?',
+            showPopup: true,
+            position: 'right'
+         });
+    });
+  </script>
 </html>
